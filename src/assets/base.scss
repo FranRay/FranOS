@@ -1,0 +1,82 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+html {
+  box-sizing: border-box;
+  height: 100dvh;
+  overflow-y: hidden;
+}
+
+body {
+  height: 99dvh;
+  color: var(--clr-secondary);
+  background: var(--clr-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Space Grotesk', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ------------ colors and themeing ------------
+[data-theme="dark"] {
+  --clr-primary: #404040;
+  --clr-secondary: #1C1C1C;
+  --clr-accent: #212121;
+  --clr-background: #161616;
+
+  --clr-text-1: #FCFCFC;
+  --clr-text-2: #555;
+}
+
+[data-theme="light"] {
+  --clr-primary: #E0E0E0;
+  --clr-secondary: #AAAAAA;
+  --clr-accent: #FFFFFF;
+  --clr-background: #FCFCFC;
+
+  --clr-text-1: #161616;
+  --clr-text-2: #555;
+}
+
+
+[data-theme="color"] {
+  --clr-primary: #F40508;
+  --clr-secondary: #FEDADA;
+  --clr-accent: #FCFFFF;
+  --clr-background: #D2E7F8;
+
+  --clr-text-1: #161616;
+  --clr-text-2: #F40508;
+  --clr-text-3: #FFF;
+}
+
+
+
+// Heading 1
+h1 {
+  font-size: clamp(25px, 4vmax, 70px);
+  font-weight: 700;
+}
+
+// Heading 2
+h2 {
+  font-size: clamp(20px, 2.4vw, 40px);
+}
+
+h3 {
+  font-size: clamp(10px, 1.95vw, 22px);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: clamp(15px, 1.95vw, 20px);
+}
+
+// Body Text
+.body, p {
+  font-size: clamp(16px, 1.2vw, 16px);
+  font-weight: 400;
+}
+
