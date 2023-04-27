@@ -1,8 +1,8 @@
 <template>
       <nav ref={dockRef} className="dock">
         <ul>
-          <li className="app gap" onMouseMove={handleAppHover}>
-            <a href="https://www.frontend.fyi" target="_blank">
+          <li className="app" onMouseMove={handleAppHover}>
+            <a @click="$emit('open')">
               <img src="../images/icons/D-AboutMe.png"/>
               <span className="tooltip">About Me</span>
             </a>
@@ -19,7 +19,7 @@
               <span className="tooltip">UX/UI</span>
             </a>
           </li>
-          <li className="app gap" onMouseMove={handleAppHover}>
+          <li className="app" onMouseMove={handleAppHover}>
             <a href="https://www.frontend.fyi" target="_blank">
               <img src="../images/icons/D-OtherWork.png" />
               <span className="tooltip">Other Work</span>
@@ -31,7 +31,7 @@
               <span className="tooltip">LinkedIn</span>
             </a>
           </li>
-          <li className="app gap" onMouseMove={handleAppHover}>
+          <li className="app" onMouseMove={handleAppHover}>
             <a href="https://www.behance.net/franraymundo" target="_blank">
               <img src="../images/icons/D-Behance.png" />
               <span className="tooltip">Behance</span>

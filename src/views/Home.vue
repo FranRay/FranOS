@@ -1,13 +1,27 @@
 <template>
   <body>
+    <p>hi guys</p>
+    <WindowAbout v-if="isOpen" :title="'About Me'" @open="openWindow" @close="closeWindow" >
+      <slot>Hey, I'm trying to figure this out.</slot>
+    </WindowAbout>
+
     <div id="darkdock" class = "dock-container darkdock">
-      <DarkDock @dark-toggle="darkToggle"/>
+      <DarkDock 
+        @open="openWindow"
+        @dark-toggle="darkToggle"
+      />
     </div>
     <div id="lightdock" class = "dock-container lightdock">
-      <LightDock @light-toggle="lightToggle"/>
+      <LightDock
+        @open="openWindow"
+        @light-toggle="lightToggle"
+      />
     </div>
     <div id="colordock" class = "dock-container colordock">
-      <ColorDock @color-toggle="colorToggle"/>
+      <ColorDock
+        @open="openWindow"
+        @color-toggle="colorToggle"
+      />
     </div>
   </body>
 </template>
@@ -17,7 +31,10 @@
   import DarkDock from '@/components/DarkDock.vue';
   import LightDock from '@/components/LightDock.vue';
   import ColorDock from '@/components/ColorDock.vue';
+  import WindowAbout from '@/components/WindowAbout.vue';
+  import { useDraggable } from '@vueuse/core';
 
+  //dock code
   let darkdock: HTMLElement | null = null;
   let lightdock: HTMLElement | null = null;
   let colordock: HTMLElement | null = null;
@@ -54,6 +71,24 @@
       colordock.style.display = 'none';
       console.log(lightdock.style.display);
     }
+  }
+
+  //about window code
+  const isOpen = ref(true);
+
+  function openWindow() {
+    switch (isOpen.value) {
+      case true: 
+        isOpen.value = false;
+        break;
+      case false:
+        isOpen.value = true;
+        break;
+    }
+  }
+
+  function closeWindow() {
+    isOpen.value = false;
   }
 </script>
 

@@ -3,7 +3,7 @@
       <nav ref={dockRef} className="dock">
         <ul>
           <li className="app gap" onMouseMove={handleAppHover}>
-            <a href="https://www.frontend.fyi" target="_blank">
+            <a @click="$emit('open')">
               <img src="../images/icons/L-AboutMe.png"/>
               <span className="tooltip">About Me</span>
             </a>
