@@ -1,10 +1,8 @@
 <template>
   <body>
     <p>hi guys</p>
-    <WindowAbout v-if="isOpen" :title="'About Me'" @open="openWindow" @close="closeWindow" >
-      <slot>Hey, I'm trying to figure this out.</slot>
-    </WindowAbout>
 
+    <!-- Docks -->
     <div id="darkdock" class = "dock-container darkdock">
       <DarkDock 
         @open="openWindow"
@@ -23,6 +21,11 @@
         @color-toggle="colorToggle"
       />
     </div>
+
+    <!-- Windows -->
+    <WindowAbout v-if="isOpen" :title="'About Me'" @open="openWindow" @close="closeWindow" >
+      <slot>Hey, I'm trying to figure this out.</slot>
+    </WindowAbout>
   </body>
 </template>
 

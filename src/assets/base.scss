@@ -31,13 +31,31 @@ body {
 }
 
 [data-theme="light"] {
-  --clr-primary: #E0E0E0;
+  --clr-primary: #EDEDED;
   --clr-secondary: #AAAAAA;
   --clr-accent: #FFFFFF;
   --clr-background: #FCFCFC;
 
   --clr-text-1: #161616;
   --clr-text-2: #555;
+
+  // Window Styles
+  .window {
+    border: 2px solid var(--clr-secondary);
+    .title-bar {
+      background-color: var(--clr-primary);
+      border-bottom: 2px solid var(--clr-secondary);
+
+      button {
+        background-color: var(--clr-accent);
+        border: 2px solid var(--clr-secondary);
+      }
+
+      button:hover {
+        background-color: var(--clr-secondary);
+      }
+    }
+  }
 }
 
 
@@ -50,6 +68,23 @@ body {
   --clr-text-1: #161616;
   --clr-text-2: #F40508;
   --clr-text-3: #FFF;
+
+  // Window Styles
+  .window {
+    border: 4px solid var(--clr-primary);
+    box-shadow: 10px 10px var(--clr-primary);
+
+    .title-bar {
+      background-color: var(--clr-secondary);
+      border-bottom: 3px solid var(--clr-primary);
+
+      button {
+        border: 3px solid var(--clr-primary);
+      }
+    }
+  }
+
+  
 }
 
 
