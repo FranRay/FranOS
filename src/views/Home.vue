@@ -1,7 +1,5 @@
 <template>
   <body>
-    <p>hi guys</p>
-
     <!-- Docks -->
     <div id="darkdock" class = "dock-container darkdock">
       <DarkDock 

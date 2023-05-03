@@ -1,7 +1,7 @@
 <template class = "color">
       <nav ref={dockRef} className="dock">
         <ul>
-          <li className="app gap" onMouseMove={handleAppHover}>
+          <li className="app" onMouseMove={handleAppHover}>
             <a @click="$emit('open')">
               <img src="../images/icons/C-AboutMe.png"/>
               <span className="tooltip">About Me</span>
@@ -19,19 +19,19 @@
               <span className="tooltip">UX/UI</span>
             </a>
           </li>
-          <li className="app gap" onMouseMove={handleAppHover}>
+          <li className="app" onMouseMove={handleAppHover}>
             <a href="https://www.frontend.fyi" target="_blank">
               <img src="../images/icons/C-OtherWork.png" />
               <span className="tooltip">Other Work</span>
             </a>
           </li>
-          <li className="app" onMouseMove={handleAppHover}>
+          <li className="app hide" onMouseMove={handleAppHover}>
             <a href="https://www.linkedin.com/in/franraymundo" target="_blank">
               <img src="../images/icons/C-LinkedIn.png" />
               <span className="tooltip">LinkedIn</span>
             </a>
           </li>
-          <li className="app gap" onMouseMove={handleAppHover}>
+          <li className="app hide" onMouseMove={handleAppHover}>
             <a href="https://www.behance.net/franraymundo" target="_blank">
               <img src="../images/icons/C-Behance.png" />
               <span className="tooltip">Behance</span>
@@ -111,6 +111,14 @@
         height: 1.5em;
         width: auto;
         white-space: nowrap;
+      }
+
+      .hide {
+        display: none;
+
+        @include media (tablet) {
+          display: flex;
+        }
       }
 
       // app animation related

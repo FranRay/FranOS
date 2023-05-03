@@ -1,5 +1,5 @@
 <template>
-  <div ref="head" :style="style" style="position: fixed" class="window">
+  <div ref="head" :style="style" style="position: fixed" class="window hide">
     <div class="title-bar">
       <h3>{{ title }}</h3>
       <button @click="$emit('close')"></button>
@@ -34,8 +34,8 @@
     position: fixed;
     top: 100px;
     left: 100px;
-    width: 600px;
-    height: 500px;
+    width: 40em;
+    height: 35em;
 
     color: var(--clr-text-2);
     background-color: var(--clr-accent);
@@ -75,5 +75,10 @@
       padding: 10px;
     }
   }
+  
+  
+  // .hide {
+  //   display: none;
+  // }
 </style>
   

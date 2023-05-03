@@ -25,13 +25,13 @@
               <span className="tooltip">Other Work</span>
             </a>
           </li>
-          <li className="app" onMouseMove={handleAppHover}>
+          <li className="app hide" onMouseMove={handleAppHover}>
             <a href="https://www.linkedin.com/in/franraymundo" target="_blank">
               <img src="../images/icons/D-LinkedIn.png" />
               <span className="tooltip">LinkedIn</span>
             </a>
           </li>
-          <li className="app" onMouseMove={handleAppHover}>
+          <li className="app hide" onMouseMove={handleAppHover}>
             <a href="https://www.behance.net/franraymundo" target="_blank">
               <img src="../images/icons/D-Behance.png" />
               <span className="tooltip">Behance</span>
@@ -109,6 +109,14 @@
 
         .tooltip {
           left: 40%;
+        }
+      }
+
+      .hide {
+        display: none;
+
+        @include media (tablet) {
+          display: flex;
         }
       }
 
