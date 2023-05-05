@@ -49,7 +49,7 @@
     
 <style scoped lang = "scss">
   .dock {
-    overflow: hidden;
+    // overflow: hidden;
     border-bottom: 0px;
     margin: auto auto -0.5em auto;
     padding: 0px;
@@ -89,7 +89,7 @@
         }
 
         img {
-          width: fit-content;
+          // width: fit-content;
           height: 100%;
         }
 
