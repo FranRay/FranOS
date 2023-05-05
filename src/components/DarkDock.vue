@@ -121,41 +121,50 @@
       }
 
       // app animation related
-
       .app:hover {
-      width: 90px;
-      height: 90px;
-      margin-top: -30px;
+        @include media (laptop) {
+          width: 90px;
+          height: 90px;
+          margin-top: -30px;
+        }
       }
 
       /* Right side */
       .app:hover + .app {
-      transition: 0.2s;
-      width: calc(80px + var(--dock-offset-right, 0px));
-      height: calc(80px + var(--dock-offset-right, 0px));
-      margin-top: calc(-20px + var(--dock-offset-right, 0px) * -1);
+        @include media (laptop) {
+          transition: 0.2s;
+          width: calc(80px + var(--dock-offset-right, 0px));
+          height: calc(80px + var(--dock-offset-right, 0px));
+          margin-top: calc(-20px + var(--dock-offset-right, 0px) * -1);
+        }
       }
 
       .app:hover + .app + .app {
-      transition: 0.2s;
-      width: calc(70px + var(--dock-offset-right, 0px));
-      height: calc(70px + var(--dock-offset-right, 0px));
-      margin-top: calc(-10px + var(--dock-offset-right, 0px) * -1);
+        @include media (laptop) {
+          transition: 0.2s;
+          width: calc(70px + var(--dock-offset-right, 0px));
+          height: calc(70px + var(--dock-offset-right, 0px));
+          margin-top: calc(-10px + var(--dock-offset-right, 0px) * -1);
+        }
       }
 
       /* Left side */
       .app:has(+ .app:hover){
-      transition: 0.2s;
-      width: calc(80px + var(--dock-offset-left, 0px));
-      height: calc(80px + var(--dock-offset-left, 0px));
-      margin-top: calc(-20px + var(--dock-offset-left, 0px) * -1);
+        @include media (laptop) {
+          transition: 0.2s;
+          width: calc(80px + var(--dock-offset-left, 0px));
+          height: calc(80px + var(--dock-offset-left, 0px));
+          margin-top: calc(-20px + var(--dock-offset-left, 0px) * -1);
+        }
       }
 
       .app:has(+ .app + .app:hover){
-      transition: 0.2s;
-      width: calc(70px + var(--dock-offset-left, 0px));
-      height: calc(70px + var(--dock-offset-left, 0px));
-      margin-top: calc(-10px + var(--dock-offset-left, 0px) * -1);
+        @include media (laptop) {
+          transition: 0.2s;
+          width: calc(70px + var(--dock-offset-left, 0px));
+          height: calc(70px + var(--dock-offset-left, 0px));
+          margin-top: calc(-10px + var(--dock-offset-left, 0px) * -1);
+        }
       }
   }
 </style>

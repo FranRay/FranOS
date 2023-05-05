@@ -99,9 +99,13 @@
     flex-direction: column;
   }
   .dock-container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
     font-weight: 700;
-    margin-top: auto;
-    // display: flex;
   }
 
   .darkdock {
