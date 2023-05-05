@@ -1,6 +1,6 @@
 <template>
-  <div ref="head" :style="style" style="position: fixed" class="window hide">
-    <div class="title-bar">
+  <div ref="head" :style="style" class="window">
+    <div class="title-bar hide">
       <h3>{{ title }}</h3>
       <button @click="$emit('close')"></button>
     </div>
@@ -31,31 +31,44 @@
   
 <style scoped lang = "scss">
   .window {
-    position: fixed;
-    top: 100px;
-    left: 100px;
-    width: 40em;
-    height: 35em;
-
     color: var(--clr-text-2);
     background-color: var(--clr-accent);
 
     border: 2px solid var(--clr-primary);
     border-radius: 1em;
-    transition: 120ms;
+
+    width: 100%;
+    height: 80%;
+    margin-top: 0.5em;
+    margin-inline: auto;
+
+    @include media(laptop){
+      position: fixed;
+      top: 100px;
+      left: 100px;
+      width: 40em;
+      height: 35em;
+
+      
+      transition: 120ms;
+    }
+    
 
     .title-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 40px;
-      padding: 0 10px;
+      @include media(laptop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 0 10px;
 
-      background-color: var(--clr-secondary);
-      color: var(--clr-text-2);
+        background-color: var(--clr-secondary);
+        color: var(--clr-text-2);
 
-      border-bottom: 2px solid var(--clr-primary);
-      border-radius: 1em 1em 0em 0em;
+        border-bottom: 2px solid var(--clr-primary);
+        border-radius: 1em 1em 0em 0em;
+      }
+      
 
       button {
         all: unset;
@@ -75,10 +88,13 @@
       padding: 10px;
     }
   }
-  
-  
-  // .hide {
-  //   display: none;
-  // }
+
+  .hide {
+    display: none;
+
+    @include media(laptop) {
+      display: flex;
+    }
+  }
 </style>
   

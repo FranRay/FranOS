@@ -51,13 +51,18 @@
   .dock {
     // overflow: hidden;
     border-bottom: 0px;
-    margin: auto auto -0.5em auto;
+    margin: auto auto 1em auto;
     padding: 0px;
+    background-color: var(--clr-accent);
+    border: 3px solid var(--clr-primary);
+    border-radius: 10px;
 
-    @include media(desktop) {
+    @include media(laptop) {
       transform: scale(20px);
       padding: 0 2em;
-      margin: auto auto -0.5em auto;
+      margin: auto auto -0.1em auto;
+      background-color: var(--clr-accent);
+      border: 3px solid var(--clr-primary);
       transform: perspective(10px) rotateX(1.5deg);
     }
   }
@@ -65,10 +70,11 @@
   .dock ul {
     display: flex;
     padding-inline: 0px;
-    padding-bottom: 1em;
+    margin-block: 0.5em;
+    margin-inline: 2em;
     
-    @include media(desktop){
-      margin-top: -3.25em;
+    @include media(laptop){
+      margin-top: -2.5em;
       list-style-type: none;
       padding: 0;
       transform: perspective(11px) rotateX(-1.5deg);
@@ -83,13 +89,12 @@
         height: 60px;
         position: relative;
 
-        @include media(desktop) {
+        @include media(laptop) {
           width: 90px;
           height: 90px;
         }
 
         img {
-          // width: fit-content;
           height: 100%;
         }
 
