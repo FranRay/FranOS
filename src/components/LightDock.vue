@@ -50,7 +50,6 @@
     
 <style scoped lang = "scss">
   .dock {
-    overflow: hidden;
     margin: auto auto 1em auto;
     padding: 0 1em;
     border-radius: 5em;

@@ -49,21 +49,22 @@
     
 <style scoped lang = "scss">
   .dock {
-    // overflow: hidden;
     border-bottom: 0px;
     margin: auto auto 1em auto;
     padding: 0px;
     background-color: var(--clr-accent);
     border: 3px solid var(--clr-primary);
     border-radius: 10px;
+    box-shadow: 4px 4px var(--clr-primary);
 
     @include media(laptop) {
       transform: scale(20px);
-      padding: 0 2em;
       margin: auto auto -0.1em auto;
+      padding: 0 2em;
       background-color: var(--clr-accent);
       border: 3px solid var(--clr-primary);
       transform: perspective(10px) rotateX(1.5deg);
+      box-shadow: none;
     }
   }
 
@@ -74,7 +75,8 @@
     margin-inline: 2em;
     
     @include media(laptop){
-      margin-top: -2.5em;
+      margin-inline: 0em;
+      margin-top: -3.25em;
       list-style-type: none;
       padding: 0;
       transform: perspective(11px) rotateX(-1.5deg);
@@ -92,10 +94,15 @@
         @include media(laptop) {
           width: 90px;
           height: 90px;
+          padding-inline: 0.35em;
         }
 
         img {
           height: 100%;
+
+          @include media(laptop) {
+            width: fit-content;
+          }
         }
 
         a {
@@ -142,8 +149,8 @@
       // app animation related
       .app:hover {
         @include media (laptop) {
-          width: 90px;
-          height: 90px;
+          width: 120px;
+          height: 120px;
           margin-top: -30px;
         }
       }
@@ -152,8 +159,8 @@
       .app:hover + .app {
         @include media (laptop) {
           transition: 0.2s;
-          width: calc(80px + var(--dock-offset-right, 0px));
-          height: calc(80px + var(--dock-offset-right, 0px));
+          width: calc(110px + var(--dock-offset-right, 0px));
+          height: calc(110px + var(--dock-offset-right, 0px));
           margin-top: calc(-20px + var(--dock-offset-right, 0px) * -1);
         }
       }
@@ -161,8 +168,8 @@
       .app:hover + .app + .app {
         @include media (laptop) {
           transition: 0.2s;
-          width: calc(70px + var(--dock-offset-right, 0px));
-          height: calc(70px + var(--dock-offset-right, 0px));
+          width: calc(100px + var(--dock-offset-right, 0px));
+          height: calc(100px + var(--dock-offset-right, 0px));
           margin-top: calc(-10px + var(--dock-offset-right, 0px) * -1);
         }
       }
@@ -171,8 +178,8 @@
       .app:has(+ .app:hover){
         @include media (laptop) {
           transition: 0.2s;
-          width: calc(80px + var(--dock-offset-left, 0px));
-          height: calc(80px + var(--dock-offset-left, 0px));
+          width: calc(110px + var(--dock-offset-left, 0px));
+          height: calc(110px + var(--dock-offset-left, 0px));
           margin-top: calc(-20px + var(--dock-offset-left, 0px) * -1);
         }
       }
@@ -180,8 +187,8 @@
       .app:has(+ .app + .app:hover){
         @include media (laptop) {
           transition: 0.2s;
-          width: calc(70px + var(--dock-offset-left, 0px));
-          height: calc(70px + var(--dock-offset-left, 0px));
+          width: calc(100px + var(--dock-offset-left, 0px));
+          height: calc(100px + var(--dock-offset-left, 0px));
           margin-top: calc(-10px + var(--dock-offset-left, 0px) * -1);
         }
       }

@@ -21,9 +21,8 @@
     </div>
 
     <!-- Windows -->
-    <WindowAbout v-if="isOpen" :title="'About Me'" @open="openWindow" @close="closeWindow" >
-      <slot>Hey, I'm trying to figure this out.</slot>
-    </WindowAbout>
+    <WindowAbout v-if="isOpen" :title="'About Me'" @open="openWindow" @close="closeWindow" />
+  
   </body>
 </template>
 

@@ -26,8 +26,17 @@ body {
   --clr-accent: #212121;
   --clr-background: #161616;
 
-  --clr-text-1: #FCFCFC;
+  --clr-text-1: #aaaaaa;
   --clr-text-2: #555;
+
+  // Window Scrollbar
+  .content::-webkit-scrollbar {
+    width: 0.25em;
+  }
+  .content::-webkit-scrollbar-thumb {
+    background-color: var(--clr-secondary);
+    border-radius: 2em;
+  }
 }
 
 [data-theme="light"] {
@@ -38,6 +47,15 @@ body {
 
   --clr-text-1: #161616;
   --clr-text-2: #555;
+
+  // Window Scrollbar
+  .content::-webkit-scrollbar {
+    width: 0.25em;
+  }
+  .content::-webkit-scrollbar-thumb {
+    background-color: var(--clr-secondary);
+    border-radius: 2em;
+  }
 
   // Window Styles
   .window {
@@ -71,8 +89,12 @@ body {
 
   // Window Styles
   .window {
-    border: 4px solid var(--clr-primary);
-    box-shadow: 10px 10px var(--clr-primary);
+    border: 3px solid var(--clr-primary);
+    box-shadow: 4px 4px var(--clr-primary);
+
+    @include media(laptop) {
+      box-shadow: 5px 5px var(--clr-primary);
+    }
 
     .title-bar {
       background-color: var(--clr-secondary);
@@ -84,6 +106,26 @@ body {
     }
   }
 
+  // Window Scrollbar
+  .content::-webkit-scrollbar {
+    width: 0.25em;
+
+    @include media (laptop) {
+      width: 1em;
+    }
+  }
+  
+  .content::-webkit-scrollbar-track {
+    @include media (laptop) {
+      background: var(--clr-secondary);
+      border-left: 3px solid var(--clr-primary);
+      border-radius: 0em;
+    }
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background-color: var(--clr-primary);
+  }
   
 }
 
@@ -91,24 +133,29 @@ body {
 h1 {
   font-size: clamp(25px, 4vmax, 70px);
   font-weight: 700;
+  margin: 0em;
 }
 
 h2 {
   font-size: clamp(20px, 2.4vw, 40px);
+  margin: 0em;
 }
 
 h3 {
   font-size: clamp(10px, 1.95vw, 22px);
   font-weight: 700;
+  margin: 0em;
 }
 
 h4 {
   font-size: clamp(15px, 1.95vw, 20px);
+  margin: 0em;
 }
 
 // Body Text
 .body, p {
   font-size: clamp(16px, 1.2vw, 16px);
   font-weight: 400;
+  margin: 0em;
 }
 
