@@ -3,62 +3,26 @@
     <!-- Title Bar -->
     <div class="title-bar hide">
       <h3>{{ title }}</h3>
-      <button @click="$emit('closeWorks')"></button>
+      <button @click="$emit('closeCrab')"></button>
     </div>
 
     <!-- Window Content -->
     <div class="content">
       <div class="intro">
-        <h1>Other Works</h1>
+        <h1>Sample Project</h1>
         <div class="desc">
-          <p>A collection of digital storytelling and development projects during the course of my career and education.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
 
-      <div class="container">
-      <h2>DIGITAL STORYTELLING</h2>
-      <!-- grid here -->
-      <div class="grid-container">
-        <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openTwine')"
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 1'">
-        </Card>
-        <Card @click="$emit('openHT')"
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 2'">
-        </Card>
-        <Card @click="$emit('openDS')"
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 3'">
-        </Card>
-      </div>
+      <div class="case">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+        <img src="../images/Project-Placeholder.png">
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
-      <div class="container">
-      <h2>CODE & DEVELOPMENT</h2>
-      <!-- grid here -->
-      <div class="grid-container">
-        <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openRPS')"
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 1'">
-        </Card>
-        <Card @click="$emit('openChickboy')"
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 2'">
-        </Card>
-        <Card @click="$emit('openSewcial')"
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 3'">
-        </Card>
-        <Card @click="$emit('openDL')"
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 4'">
-        </Card>
-      </div>
-      </div>
-      
     </div>
 
   </div>
@@ -67,7 +31,6 @@
 <script setup lang = "ts">
   import { ref } from 'vue';
   import { useDraggable } from '@vueuse/core';
-  import Card from './Card.vue';
 
   // Heading Prop
   const props = defineProps({
@@ -101,7 +64,7 @@
 
     @include media(laptop){
       position: fixed;
-      width: 60em;
+      width: 50em;
       height: 35em;
       transition: 120ms;
     }
@@ -157,15 +120,12 @@
     }
 
     .intro {
+      display: flex;
+      flex-direction: column;
       width: 90%;
       margin-inline: auto;
       margin-top: 2em;
-      display: flex;
-      flex-direction: column;
 
-      @include media(laptop) {
-        flex-direction: row;
-      }
       h1 {
         font-size: clamp(50px, 5.5vmax, 120px);
         line-height: 100%;
@@ -178,20 +138,17 @@
       }
     }
 
-    .container {
-      width: 90%;
-      margin-inline: auto;
+    .case {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       margin-block: 2em;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(1fr);
-      grid-template-rows: repeat(1fr);
-      grid-column-gap: 1em;
-      grid-row-gap: 1em;
+      margin-inline: auto;
+      width: 90%;
 
-      @include media(tablet) {
-        grid-template-columns: repeat(2, 1fr);
+      img {
+        width: 90%;
       }
     }
   }

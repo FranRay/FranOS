@@ -11,29 +11,27 @@
       <div class="intro">
         <h1>UX/UI Design</h1>
         <div class="desc">
-          <p>A collection of UX/UI design projects during the course of my career and education.</p>
+          <p>A collection of  design projects during the course of my career and education.</p>
         </div>
       </div>
 
+      <div class="container">
       <!-- grid here -->
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
-        <ProjectCard 
+        <Card @click="$emit('openDL')"
           :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 1'">
-        </ProjectCard>
-        <ProjectCard 
+        </Card>
+        <Card @click="$emit('openPIHSS')"
           :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 2'">
-        </ProjectCard>
-        <ProjectCard 
+        </Card>
+        <Card @click="$emit('openSewcial')"
           :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 3'">
-        </ProjectCard>
-        <ProjectCard 
-          :image="'src/images/Project-Placeholder.png'" 
-          :title="'Project 4'">
-        </ProjectCard>
+        </Card>
+      </div>
       </div>
       
     </div>
@@ -44,7 +42,7 @@
 <script setup lang = "ts">
   import { ref } from 'vue';
   import { useDraggable } from '@vueuse/core';
-  import ProjectCard from './ProjectCard.vue';
+  import Card from './Card.vue';
 
   // Heading Prop
   const props = defineProps({
@@ -134,7 +132,9 @@
     }
 
     .intro {
-      margin: 1em;
+      width: 90%;
+      margin-inline: auto;
+      margin-top: 2em;
       display: flex;
       flex-direction: column;
 
@@ -153,13 +153,18 @@
       }
     }
 
+    .container {
+      width: 90%;
+      margin-inline: auto;
+      margin-block: 2em;
+    }
+
     .grid-container {
       display: grid;
       grid-template-columns: repeat(1fr);
       grid-template-rows: repeat(1fr);
       grid-column-gap: 1em;
       grid-row-gap: 1em;
-      margin: 1em;
 
       @include media(tablet) {
         grid-template-columns: repeat(2, 1fr);
