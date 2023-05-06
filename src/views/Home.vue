@@ -3,36 +3,55 @@
     <!-- Docks -->
     <div id="darkdock" class = "dock-container darkdock">
       <DarkDock 
-        @open="openWindow"
+        @openAbout="openWindowAbout"
+        @openGraphics="openWindowGraphics"
+        @openUXUI="openWindowUXUI"
+        @openWorks="openWindowWorks"
         @dark-toggle="darkToggle"
       />
     </div>
     <div id="lightdock" class = "dock-container lightdock">
       <LightDock
-        @open="openWindow"
+        @openAbout="openWindowAbout"
+        @openGraphics="openWindowGraphics"
+        @openUXUI="openWindowUXUI"
+        @openWorks="openWindowWorks"
         @light-toggle="lightToggle"
       />
     </div>
     <div id="colordock" class = "dock-container colordock">
       <ColorDock
-        @open="openWindow"
+        @openAbout="openWindowAbout"
+        @openGraphics="openWindowGraphics"
+        @openUXUI="openWindowUXUI"
+        @openWorks="openWindowWorks"
         @color-toggle="colorToggle"
       />
     </div>
 
     <!-- Windows -->
-    <WindowAbout v-if="isOpen" :title="'About Me'" @open="openWindow" @close="closeWindow" />
+    <WindowAbout class = "window" v-if="isOpenAbout" :title="'About Me'" @openAbout="openWindowAbout" @closeAbout="closeWindowAbout" />
+    <WindowGraphics class = "window" v-if="isOpenGraphics" :title="'Graphic Design'" @openGraphics="openWindowGraphics" @closeGraphics="closeWindowGraphics" />
+    <WindowUXUI class = "window" v-if="isOpenUXUI" :title="'UX / UI'" @openUXUI="openWindowUXUI" @closeUXUI="closeWindowUXUI" />
+    <WindowWorks class = "window" v-if="isOpenWorks" :title="'Other Works'" @openWorks="openWindowWorks" @closeWorks="closeWindowWorks" />
   
   </body>
 </template>
 
 <script setup lang="ts">
-  import { ref, computed, onMounted } from 'vue';
+  import { ref, computed, onMounted, watchEffect } from 'vue';
+  import { useDraggable } from '@vueuse/core';
+
+  // import docks
   import DarkDock from '@/components/DarkDock.vue';
   import LightDock from '@/components/LightDock.vue';
   import ColorDock from '@/components/ColorDock.vue';
+
+  // import main windows
   import WindowAbout from '@/components/WindowAbout.vue';
-  import { useDraggable } from '@vueuse/core';
+  import WindowGraphics from '@/components/WindowGraphics.vue';
+  import WindowUXUI from '@/components/WindowUXUI.vue';
+  import WindowWorks from '@/components/WindowWorks.vue';
 
   //dock code
   let darkdock: HTMLElement | null = null;
@@ -51,7 +70,6 @@
       darkdock.style.display = 'none';
       lightdock.style.display = 'flex';
       colordock.style.display = 'none';
-      console.log(lightdock.style.display);
     }
   }
   function lightToggle() {
@@ -60,7 +78,6 @@
       darkdock.style.display = 'none';
       lightdock.style.display = 'none';
       colordock.style.display = 'flex';
-      console.log(lightdock.style.display);
     }
   }
   function colorToggle() {
@@ -69,27 +86,111 @@
       darkdock.style.display = 'flex';
       lightdock.style.display = 'none';
       colordock.style.display = 'none';
-      console.log(lightdock.style.display);
     }
   }
+  
+  // ---------------MAIN WINDOWS---------------
+  // about me window
+  const isOpenAbout = ref(true);
 
-  //about window code
-  const isOpen = ref(true);
-
-  function openWindow() {
-    switch (isOpen.value) {
+  function openWindowAbout() {
+    switch (isOpenAbout.value) {
       case true: 
-        isOpen.value = false;
+        isOpenAbout.value = false;
         break;
       case false:
-        isOpen.value = true;
+        isOpenAbout.value = true;
+        
+        // run this code on mobile-tablet
+        if (window.innerWidth <= 768) {
+          isOpenGraphics.value = false;
+          isOpenUXUI.value = false;
+          isOpenWorks.value = false;
+        }
         break;
     }
   }
 
-  function closeWindow() {
-    isOpen.value = false;
+  function closeWindowAbout() {
+    isOpenAbout.value = false;
   }
+
+  // graphic design window
+  const isOpenGraphics = ref(false);
+
+  function openWindowGraphics() {
+    switch (isOpenGraphics.value) {
+      case true: 
+        isOpenGraphics.value = false;
+        break;
+      case false:
+        isOpenGraphics.value = true;
+
+        // run this code on mobile-tablet
+        if (window.innerWidth <= 768) {
+          isOpenAbout.value = false;
+          isOpenUXUI.value = false;
+          isOpenWorks.value = false;
+        }
+        break;
+    }
+  }
+
+  function closeWindowGraphics() {
+    isOpenGraphics.value = false;
+  }
+
+  // ux ui window
+  const isOpenUXUI = ref(false);
+
+  function openWindowUXUI() {
+    switch (isOpenUXUI.value) {
+      case true: 
+        isOpenUXUI.value = false;
+        break;
+      case false:
+        isOpenUXUI.value = true;
+        
+        // run this code on mobile-tablet
+        if (window.innerWidth <= 768) {
+          isOpenAbout.value = false;
+          isOpenGraphics.value = false;
+          isOpenWorks.value = false;
+        }
+        break;
+    }
+  }
+
+  function closeWindowUXUI() {
+    isOpenUXUI.value = false;
+  }
+
+  // other works window
+  const isOpenWorks = ref(false);
+
+  function openWindowWorks() {
+    switch (isOpenWorks.value) {
+      case true: 
+        isOpenWorks.value = false;
+        break;
+      case false:
+        isOpenWorks.value = true;
+        
+        // run this code on mobile-tablet
+        if (window.innerWidth <= 768) {
+          isOpenAbout.value = false;
+          isOpenGraphics.value = false;
+          isOpenUXUI.value = false;
+        }
+        break;
+    }
+  }
+
+  function closeWindowWorks() {
+    isOpenWorks.value = false;
+  }
+
+
 </script>
 
 <style scoped lang = "scss">

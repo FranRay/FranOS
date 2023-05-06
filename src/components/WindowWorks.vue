@@ -3,18 +3,12 @@
     <!-- Title Bar -->
     <div class="title-bar hide">
       <h3>{{ title }}</h3>
-      <button @click="$emit('closeGraphics')"></button>
+      <button @click="$emit('closeWorks')"></button>
     </div>
 
     <!-- Window Content -->
     <div class="content">
-      <div class="intro">
-        <h1>Graphic Design</h1>
-        <div class="desc">
-
-        </div>
-      </div>
-      
+      <!-- insert divs -->
     </div>
 
   </div>
@@ -35,7 +29,7 @@
   // Dragging function
   const head = ref<HTMLElement | null>(null)
   const { x, y, style } = useDraggable(head, {
-    initialValue: { x: 60, y: 60 },
+    initialValue: { x: 100, y: 100 },
   })
 </script>
   
@@ -61,6 +55,7 @@
       transition: 120ms;
     }
     
+
     .title-bar {
       @include media(laptop) {
         display: flex;
@@ -101,7 +96,9 @@
 
       display:  flex;
       flex-direction: column;
-      
+      justify-content: center;
+      align-items: center;
+
       @include media(tablet) {
         flex-direction: row-reverse;
         width: 98%;

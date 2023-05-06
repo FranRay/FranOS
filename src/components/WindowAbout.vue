@@ -1,12 +1,15 @@
 <template>
   <div ref="head" :style="style" class="window">
+    <!-- Title Bar -->
     <div class="title-bar hide">
       <h3>{{ title }}</h3>
-      <button @click="$emit('close')"></button>
+      <button @click="$emit('closeAbout')"></button>
     </div>
+
+    <!-- Window Content -->
     <div class="content">
       <div class="intro">
-        <img src="../images/wave.png">
+        <img src="../images/Me-wave.png">
 
         <div class="intro-text">
           <h1>I'm Fran Raymundo,</h1>
@@ -16,6 +19,7 @@
           </div>
           <h1>Based in Dubai</h1>
         </div>
+
       </div>
     </div>
   </div>
@@ -25,7 +29,7 @@
   import { ref } from 'vue';
   import { useDraggable } from '@vueuse/core';
 
-  // Heading
+  // Heading Prop
   const props = defineProps({
     title: {
       type: String,
@@ -57,8 +61,6 @@
 
     @include media(laptop){
       position: fixed;
-      top: 100px;
-      left: 100px;
       width: 40em;
       height: 35em;
 

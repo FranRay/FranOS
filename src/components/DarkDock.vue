@@ -2,25 +2,25 @@
       <nav ref={dockRef} className="dock">
         <ul>
           <li className="app" onMouseMove={handleAppHover}>
-            <a @click="$emit('open')">
+            <a @click="$emit('openAbout')">
               <img src="../images/icons/D-AboutMe.png"/>
               <span className="tooltip">About Me</span>
             </a>
           </li>
           <li className="app" onMouseMove={handleAppHover}>
-            <a href="https://www.frontend.fyi" target="_blank">
+            <a @click="$emit('openGraphics')">
               <img src="../images/icons/D-GraphicDesign.png" />
               <span className="tooltip">Graphic Design</span>
             </a>
           </li>
           <li className="app" onMouseMove={handleAppHover}>
-            <a href="https://www.frontend.fyi" target="_blank">
+            <a @click="$emit('openUXUI')">
               <img src="../images/icons/D-UXUI.png" />
               <span className="tooltip">UX/UI</span>
             </a>
           </li>
           <li className="app" onMouseMove={handleAppHover}>
-            <a href="https://www.frontend.fyi" target="_blank">
+            <a @click="$emit('openWorks')">
               <img src="../images/icons/D-OtherWork.png" />
               <span className="tooltip">Other Work</span>
             </a>
