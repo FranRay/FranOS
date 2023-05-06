@@ -6,7 +6,7 @@
     </div>
     <div class="content">
       <div class="intro">
-        <img src="src\images\memoji\wave.png"/>
+        <img src="../images/memoji/wave.png">
 
         <div class="intro-text">
           <h1>I'm Fran Raymundo,</h1>
