@@ -3,12 +3,39 @@
     <!-- Title Bar -->
     <div class="title-bar hide">
       <h3>{{ title }}</h3>
-      <button @click="$emit('closeWorks')"></button>
+      <button @click="$emit('closeGraphics')"></button>
     </div>
 
     <!-- Window Content -->
     <div class="content">
-      <!-- insert divs -->
+      <div class="intro">
+        <h1>Graphic Design</h1>
+        <div class="desc">
+          <p>A collection of graphic design projects during the course of my career and education.</p>
+        </div>
+      </div>
+
+      <!-- grid here -->
+      <div class="grid-container">
+        <!-- insert grid item - component for card? -->
+        <ProjectCard 
+          :image="'src/images/Project-Placeholder.png'" 
+          :title="'Project 1'">
+        </ProjectCard>
+        <ProjectCard 
+          :image="'src/images/Project-Placeholder.png'" 
+          :title="'Project 2'">
+        </ProjectCard>
+        <ProjectCard 
+          :image="'src/images/Project-Placeholder.png'" 
+          :title="'Project 3'">
+        </ProjectCard>
+        <ProjectCard 
+          :image="'src/images/Project-Placeholder.png'" 
+          :title="'Project 4'">
+        </ProjectCard>
+      </div>
+      
     </div>
 
   </div>
@@ -17,6 +44,7 @@
 <script setup lang = "ts">
   import { ref } from 'vue';
   import { useDraggable } from '@vueuse/core';
+  import ProjectCard from './ProjectCard.vue';
 
   // Heading Prop
   const props = defineProps({
@@ -29,7 +57,7 @@
   // Dragging function
   const head = ref<HTMLElement | null>(null)
   const { x, y, style } = useDraggable(head, {
-    initialValue: { x: 100, y: 100 },
+    initialValue: { x: 60, y: 60 },
   })
 </script>
   
@@ -50,12 +78,11 @@
 
     @include media(laptop){
       position: fixed;
-      width: 40em;
+      width: 60em;
       height: 35em;
       transition: 120ms;
     }
     
-
     .title-bar {
       @include media(laptop) {
         display: flex;
@@ -86,26 +113,56 @@
         background-color: var(--clr-primary);
       }
     }
+  }
 
-    .content {
-      padding: 10px;
-      font-size: 125%;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      height: 100%;
+  .content {
+    padding: 10px;
+    font-size: 125%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
 
-      display:  flex;
+    display:  flex;
+    flex-direction: column;
+    
+    @include media(tablet) {
+      width: 98%;
+    }
+
+    @include media(laptop) {
+      width: 98%;
+    }
+
+    .intro {
+      margin: 1em;
+      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      @include media(tablet) {
-        flex-direction: row-reverse;
-        width: 98%;
-      }
 
       @include media(laptop) {
-        width: 97%;
+        flex-direction: row;
+      }
+      h1 {
+        font-size: clamp(50px, 5.5vmax, 120px);
+        line-height: 100%;
+      }
+
+      .desc {
+        p {
+          margin-block: 1em;
+        }
+      }
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1fr);
+      grid-template-rows: repeat(1fr);
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+      margin: 1em;
+
+      @include media(tablet) {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
@@ -118,4 +175,3 @@
     }
   }
 </style>
-  
