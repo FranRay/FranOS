@@ -19,16 +19,16 @@
       <!-- grid here -->
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openDL')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openDL')" @touchstart="$emit('openDL')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 1'">
         </Card>
-        <Card @click="$emit('openPIHSS')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openPIHSS')" @touchstart="$emit('openPIHSS')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 2'">
         </Card>
-        <Card @click="$emit('openSewcial')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openSewcial')" @touchstart="$emit('openSewcial')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 3'">
         </Card>
       </div>

@@ -368,6 +368,7 @@
         break;
       case false:
         isOpenChunk.value = true;
+        console.log("running~");
         
         // run this code on mobile-tablet
         if (window.innerWidth <= 768) {

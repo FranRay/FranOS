@@ -20,16 +20,16 @@
       <!-- grid here -->
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openTwine')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openTwine')" @touchstart="$emit('openTwine')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 1'">
         </Card>
-        <Card @click="$emit('openHT')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openHT')" @touchstart="$emit('openHT')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 2'">
         </Card>
-        <Card @click="$emit('openDS')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openDS')" @touchstart="$emit('openDS')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 3'">
         </Card>
       </div>
@@ -40,20 +40,20 @@
       <!-- grid here -->
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openRPS')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openRPS')" @touchstart="$emit('openRPS')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 1'">
         </Card>
-        <Card @click="$emit('openChickboy')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openChickboy')" @touchstart="$emit('openChickboy')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 2'">
         </Card>
-        <Card @click="$emit('openSewcial')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openSewcial')" @touchstart="$emit('openSewcial')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 3'">
         </Card>
-        <Card @click="$emit('openDL')"
-          :image="'../images/Project-Placeholder.png'" 
+        <Card @click="$emit('openDL')" @touchstart="$emit('openDL')"
+          :image="'src/images/Project-Placeholder.png'" 
           :title="'Project 4'">
         </Card>
       </div>
