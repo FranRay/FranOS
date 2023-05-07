@@ -80,7 +80,7 @@
   // Dragging function
   const head = ref<HTMLElement | null>(null)
   const { x, y, style } = useDraggable(head, {
-    initialValue: { x: 60, y: 60 },
+    initialValue: { x: 100, y: 100 },
   })
 </script>
   

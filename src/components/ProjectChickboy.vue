@@ -116,9 +116,8 @@
     }
 
     @include media(laptop) {
-      width: 98%;
+      width: 97.5%;
     }
-
     .intro {
       display: flex;
       flex-direction: column;

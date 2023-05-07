@@ -116,7 +116,7 @@
     }
 
     @include media(laptop) {
-      width: 98%;
+      width: 97.5%;
     }
 
     .intro {

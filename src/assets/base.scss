@@ -130,6 +130,10 @@ body {
 
 .content {
   margin-block: 0.25em;
+
+  @include media(laptop) {
+    margin-block: 0;
+  }
 }
 
 // Headings
