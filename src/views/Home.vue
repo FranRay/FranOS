@@ -229,6 +229,19 @@
           isOpenGraphics.value = false;
           isOpenUXUI.value = false;
           isOpenWorks.value = false;
+
+          isOpenChunk.value = false;
+          isOpenCrab.value = false;
+					isOpenCiao.value = false;
+					isOpenFunkey.value = false;
+					isOpenDL.value = false;
+					isOpenPIHSS.value = false;
+					isOpenSewcial.value = false;
+					isOpenTwine.value = false;
+					isOpenHT.value = false;
+					isOpenDS.value = false;
+					isOpenRPS.value = false;
+					isOpenChickboy.value = false;
         }
         break;
     }
@@ -252,6 +265,19 @@
           isOpenAbout.value = false;
           isOpenUXUI.value = false;
           isOpenWorks.value = false;
+
+          isOpenChunk.value = false;
+          isOpenCrab.value = false;
+					isOpenCiao.value = false;
+					isOpenFunkey.value = false;
+					isOpenDL.value = false;
+					isOpenPIHSS.value = false;
+					isOpenSewcial.value = false;
+					isOpenTwine.value = false;
+					isOpenHT.value = false;
+					isOpenDS.value = false;
+					isOpenRPS.value = false;
+					isOpenChickboy.value = false;
         }
         break;
     }
@@ -275,6 +301,19 @@
           isOpenAbout.value = false;
           isOpenGraphics.value = false;
           isOpenWorks.value = false;
+
+          isOpenChunk.value = false;
+          isOpenCrab.value = false;
+					isOpenCiao.value = false;
+					isOpenFunkey.value = false;
+					isOpenDL.value = false;
+					isOpenPIHSS.value = false;
+					isOpenSewcial.value = false;
+					isOpenTwine.value = false;
+					isOpenHT.value = false;
+					isOpenDS.value = false;
+					isOpenRPS.value = false;
+					isOpenChickboy.value = false;
         }
         break;
     }
@@ -298,6 +337,19 @@
           isOpenAbout.value = false;
           isOpenGraphics.value = false;
           isOpenUXUI.value = false;
+
+          isOpenChunk.value = false;
+          isOpenCrab.value = false;
+					isOpenCiao.value = false;
+					isOpenFunkey.value = false;
+					isOpenDL.value = false;
+					isOpenPIHSS.value = false;
+					isOpenSewcial.value = false;
+					isOpenTwine.value = false;
+					isOpenHT.value = false;
+					isOpenDS.value = false;
+					isOpenRPS.value = false;
+					isOpenChickboy.value = false;
         }
         break;
     }
