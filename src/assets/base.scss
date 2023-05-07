@@ -34,7 +34,7 @@ body {
     width: 0.25em;
   }
   .content::-webkit-scrollbar-thumb {
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-primary);
     border-radius: 2em;
   }
 }
@@ -126,6 +126,10 @@ body {
     background-color: var(--clr-primary);
   }
   
+}
+
+.content {
+  margin-block: 0.25em;
 }
 
 // Headings

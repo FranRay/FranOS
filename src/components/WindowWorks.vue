@@ -20,15 +20,15 @@
       <!-- grid here -->
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openTwine')" @touchstart="$emit('openTwine')"
+        <Card @click="$emit('openTwine')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 1'">
         </Card>
-        <Card @click="$emit('openHT')" @touchstart="$emit('openHT')"
+        <Card @click="$emit('openHT')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 2'">
         </Card>
-        <Card @click="$emit('openDS')" @touchstart="$emit('openDS')"
+        <Card @click="$emit('openDS')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 3'">
         </Card>
@@ -40,19 +40,19 @@
       <!-- grid here -->
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openRPS')" @touchstart="$emit('openRPS')"
+        <Card @click="$emit('openRPS')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 1'">
         </Card>
-        <Card @click="$emit('openChickboy')" @touchstart="$emit('openChickboy')"
+        <Card @click="$emit('openChickboy')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 2'">
         </Card>
-        <Card @click="$emit('openSewcial')" @touchstart="$emit('openSewcial')"
+        <Card @click="$emit('openSewcial')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 3'">
         </Card>
-        <Card @click="$emit('openDL')" @touchstart="$emit('openDL')"
+        <Card @click="$emit('openDL')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 4'">
         </Card>

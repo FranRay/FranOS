@@ -18,16 +18,16 @@
       <!-- grid here -->
       <div class = "container">
       <div class="grid-container">
-        <!-- insert grid item - component for card? -->
-        <Card @click="$emit('openChunk')" @touchstart="$emit('openChunk')"
+        <!-- insert grid item - component for card? also use online images if possible-->
+        <Card @click="$emit('openChunk')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 1'">
         </Card>
-        <Card @click="$emit('openCrab')" @touchstart="$emit('openCrab')"
+        <Card @click="$emit('openCrab')" 
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 2'">
         </Card>
-        <Card @click="$emit('openCiao')" @touchstart="$emit('openCiao')"
+        <Card @click="$emit('openCiao')"
           :image="'https://via.placeholder.com/800x600'" 
           :title="'Project 3'">
         </Card>
