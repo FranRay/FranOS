@@ -9,7 +9,8 @@
     <!-- Window Content -->
     <div class="content">
       <div class="intro">
-        <img src="../images/Me-wave.png">
+        <!-- <img src="../images/Me-wave.png"> -->
+        <SelfPortrait class="portrait"></SelfPortrait>
 
         <div class="intro-text">
           <h1>I'm Fran Raymundo,</h1>
@@ -28,6 +29,7 @@
 <script setup lang = "ts">
   import { ref } from 'vue';
   import { useDraggable } from '@vueuse/core';
+  import SelfPortrait from '@/components/SelfPortrait.vue';
 
   // Heading Prop
   const props = defineProps({
@@ -133,7 +135,7 @@
         }
 
         // Image
-        img {
+        img, .portrait {
           width: 75%;
 
           @include media(tablet) {
