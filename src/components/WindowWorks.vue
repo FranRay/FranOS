@@ -41,19 +41,19 @@
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
         <Card @click="$emit('openRPS')"
-          :image="'src/images/_CODE/RPS/CoverImage.png'" 
+          :image="'/src/images/_CODE/RPS/CoverImage.png'" 
           :title="'Machine Learning'">
         </Card>
         <Card @click="$emit('openChickboy')"
-          :image="'src/images/_CODE/Chickboy/CoverImage.png'" 
+          :image="'/src/images/_CODE/Chickboy/CoverImage.png'" 
           :title="'Chick-boy'">
         </Card>
         <Card @click="$emit('openSewcial')"
-          :image="'src/images/_CODE/Canvas/CoverImage.png'" 
+          :image="'/src/images/_CODE/Canvas/CoverImage.png'" 
           :title="'Marceline’s Escape'">
         </Card>
         <Card @click="$emit('openDL')"
-          :image="'src/images/_UXUI/DL/CoverImage.png'" 
+          :image="'/src/images/_UXUI/DL/CoverImage.png'" 
           :title="'Design Lab'">
         </Card>
       </div>
