@@ -20,7 +20,7 @@
       <div class="grid-container">
         <!-- insert grid item - component for card? also use online images if possible-->
         <Card @click="$emit('openChunk')"
-          :image="'public/img/_GD/Chunk/CoverImage2.png'" 
+          :image="'img/_GD/Chunk/CoverImage2.png'" 
           :title="'Chunk Bakehouse'">
         </Card>
         <Card @click="$emit('openCiao')" 
