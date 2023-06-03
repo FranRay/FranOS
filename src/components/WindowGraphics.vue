@@ -20,15 +20,15 @@
       <div class="grid-container">
         <!-- insert grid item - component for card? also use online images if possible-->
         <Card @click="$emit('openChunk')"
-          :image="'src/images/_GD/Chunk/CoverImage2.png'" 
+          :image="'public/img/_GD/Chunk/CoverImage2.png'" 
           :title="'Chunk Bakehouse'">
         </Card>
         <Card @click="$emit('openCiao')" 
-          :image="'src/images/_GD/CiaoPasta/CoverImage2.png'" 
+          :image="'public/img/_GD/CiaoPasta/CoverImage2.png'" 
           :title="'Ciao Pasta'">
         </Card>
         <Card @click="$emit('openCrab')"
-          :image="'src/images/_GD/MrCrab/CoverImage3.png'" 
+          :image="'public/img/_GD/MrCrab/CoverImage3.png'" 
           :title="'Mr. Crab'">
         </Card>
       </div>
