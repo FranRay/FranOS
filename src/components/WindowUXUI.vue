@@ -20,19 +20,19 @@
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
         <Card @click="$emit('openFunkey')"
-          :image="'public/img/_UXUI/Funkey/CoverImage2.png'" 
+          :image="'img/_UXUI/Funkey/CoverImage2.png'" 
           :title="'Funkey'">
         </Card>
         <Card @click="$emit('openSewcial')"
-          :image="'public/img/_UXUI/Sewcial/CoverImage2.png'" 
+          :image="'img/_UXUI/Sewcial/CoverImage2.png'" 
           :title="'Sewcial'">
         </Card>
         <Card @click="$emit('openPIHSS')"
-          :image="'public/img/_UXUI/PIHSS/CoverImage3.png'" 
+          :image="'img/_UXUI/PIHSS/CoverImage3.png'" 
           :title="'Pakistan Islamia HSS'">
         </Card>
         <Card @click="$emit('openDL')"
-          :image="'public/img/_UXUI/DL/CoverImage2.png'" 
+          :image="'img/_UXUI/DL/CoverImage2.png'" 
           :title="'Design Lab'">
         </Card>
       </div>

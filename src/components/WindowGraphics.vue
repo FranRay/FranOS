@@ -24,11 +24,11 @@
           :title="'Chunk Bakehouse'">
         </Card>
         <Card @click="$emit('openCiao')" 
-          :image="'public/img/_GD/CiaoPasta/CoverImage2.png'" 
+          :image="'img/_GD/CiaoPasta/CoverImage2.png'" 
           :title="'Ciao Pasta'">
         </Card>
         <Card @click="$emit('openCrab')"
-          :image="'public/img/_GD/MrCrab/CoverImage3.png'" 
+          :image="'img/_GD/MrCrab/CoverImage3.png'" 
           :title="'Mr. Crab'">
         </Card>
       </div>

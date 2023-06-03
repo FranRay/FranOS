@@ -21,15 +21,15 @@
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
         <Card @click="$emit('openTwine')"
-          :image="'public/img/_DST/Twine/CoverImage.png'" 
+          :image="'img/_DST/Twine/CoverImage.png'" 
           :title="'Twine: Cinderella'">
         </Card>
         <Card @click="$emit('openHT')"
-          :image="'public/img/_DST/HTS/CoverImage.png'" 
+          :image="'img/_DST/HTS/CoverImage.png'" 
           :title="'PRIMARY'">
         </Card>
         <Card @click="$emit('openDS')"
-          :image="'public/img/_DST/DS/CoverImage.png'" 
+          :image="'img/_DST/DS/CoverImage.png'" 
           :title="'A Collection'">
         </Card>
       </div>
@@ -41,19 +41,19 @@
       <div class="grid-container">
         <!-- insert grid item - component for card? -->
         <Card @click="$emit('openRPS')"
-          :image="'public/img/_CODE/RPS/CoverImage.png'" 
+          :image="'img/_CODE/RPS/CoverImage.png'" 
           :title="'Machine Learning'">
         </Card>
         <Card @click="$emit('openChickboy')"
-          :image="'public/img/_CODE/Chickboy/CoverImage.png'" 
+          :image="'img/_CODE/Chickboy/CoverImage.png'" 
           :title="'Chick-boy'">
         </Card>
         <Card @click="$emit('openSewcial')"
-          :image="'public/img/_CODE/Canvas/CoverImage.png'" 
+          :image="'img/_CODE/Canvas/CoverImage.png'" 
           :title="'Marceline’s Escape'">
         </Card>
         <Card @click="$emit('openDL')"
-          :image="'public/img/_UXUI/DL/CoverImage.png'" 
+          :image="'img/_UXUI/DL/CoverImage.png'" 
           :title="'Design Lab'">
         </Card>
       </div>
