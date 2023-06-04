@@ -18,26 +18,26 @@
       <div class="case">
         <p>More Text.</p>
         <br>
-        <img src="img/_GD/MrCrab/ContentHeader.png">
+        <img src="/img/_GD/MrCrab/ContentHeader.png">
         <br>
         <p>More Text.</p>
-        <img src="img/_GD/MrCrab/ContentPiece.png">
+        <img src="/img/_GD/MrCrab/ContentPiece.png">
         <br>
       </div>
       <div class = "flex-half">
-        <img src="img/_GD/MrCrab/ContentPieceHalf.png">
-        <img src="img/_GD/MrCrab/ContentPieceHalf-1.png">
+        <img src="/img/_GD/MrCrab/ContentPieceHalf.png">
+        <img src="/img/_GD/MrCrab/ContentPieceHalf-1.png">
       </div>
       <br>
       <div class = "flex-grid">
-        <img src="img/_GD/MrCrab/ContentPieceThird.png">
-        <img src="img/_GD/MrCrab/ContentPieceThird-1.png">
-        <img src="img/_GD/MrCrab/ContentPieceThird-2.png">
+        <img src="/img/_GD/MrCrab/ContentPieceThird.png">
+        <img src="/img/_GD/MrCrab/ContentPieceThird-1.png">
+        <img src="/img/_GD/MrCrab/ContentPieceThird-2.png">
       </div>
       <div class="case">
         <p>More Text.</p>
         <br>
-        <img src="img/_GD/MrCrab/Social.png">
+        <img src="/img/_GD/MrCrab/Social.png">
       </div>
 
     </div>

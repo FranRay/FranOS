@@ -18,21 +18,21 @@
       <div class="case">
         <p>More Text.</p>
         <br>
-        <img src="img/_GD/CiaoPasta/ContentHeader.png">
+        <img src="/img/_GD/CiaoPasta/ContentHeader.png">
         <br>
         <p>More Text.</p>
       </div>
       <div class = "flex-grid">
-        <img src="img/_GD/CiaoPasta/ContentPieceThird.png">
-        <img src="img/_GD/CiaoPasta/ContentPieceThird-1.png">
-        <img src="img/_GD/CiaoPasta/ContentPieceThird-2.png">
+        <img src="/img/_GD/CiaoPasta/ContentPieceThird.png">
+        <img src="/img/_GD/CiaoPasta/ContentPieceThird-1.png">
+        <img src="/img/_GD/CiaoPasta/ContentPieceThird-2.png">
       </div>
       <div class="case">
         <p>More Text.</p>
         <br>
-        <img src="img/_GD/CiaoPasta/ContentPiece.png">
+        <img src="/img/_GD/CiaoPasta/ContentPiece.png">
         <br>
-        <img src="img/_GD/CiaoPasta/ContentPiece-1.png">
+        <img src="/img/_GD/CiaoPasta/ContentPiece-1.png">
       </div>
 
     </div>
