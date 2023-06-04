@@ -1,5 +1,6 @@
 <template>
   <body>
+    <!-- Logo -->
     <svg class="logo" width="1020" height="210" viewBox="0 0 1020 210" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M671.004 168.321C677.163 184.874 682.071 198.636 685.728 209.608H760.505L679.088 9.28687e-05H572.84L492 209.608H564.468L578.903 168.321H671.004ZM625.88 57.7437C625.88 78.7118 608.882 95.7097 587.914 95.7097C608.882 95.7097 625.88 112.708 625.88 133.676C625.88 112.708 642.878 95.7097 663.846 95.7097C642.878 95.7097 625.88 78.7118 625.88 57.7437Z" fill="var(--clr-logo)"/>
       <path d="M1019.54 0.288712C1018.19 32.8173 1017.51 67.6557 1017.51 104.804C1017.51 142.144 1018.19 177.079 1019.54 209.608H916.175L846.306 51.9688L851.503 209.608H777.303C778.843 172.267 779.613 137.332 779.613 104.804C779.613 72.4676 778.843 37.6293 777.303 0.288712H883.55L953.708 162.258L948.8 0.288712H1019.54Z" fill="var(--clr-logo)"/>
@@ -60,6 +61,7 @@
       @openUXUI="openWindowUXUI" 
       @closeUXUI="closeWindowUXUI" 
 
+      @openFunkey="openProjectFunkey"
       @openDL="openProjectDL"
       @openPIHSS="openProjectPIHSS"
       @openSewcial="openProjectSewcial"
@@ -72,11 +74,12 @@
 
       @openTwine="openProjectTwine"
       @openHT="openProjectHT"
+      @openHT2="openProjectHT2"
       @openDS="openProjectDS"
 
       @openRPS="openProjectRPS"
       @openChickboy="openProjectChickboy"
-      @openSewcial="openProjectSewcial"
+      @openCanvas="openProjectCanvas"
       @openDL="openProjectDL"
     />
 
@@ -100,6 +103,12 @@
       @closeCiao="closeProjectCiao"
     />
 
+    <ProjectFunkey
+      v-if="isOpenFunkey" 
+      :title="'Funkey'" 
+      @openFunkey="openProjectFunkey"
+      @closeFunkey="closeProjectFunkey"
+    />
     <ProjectDL
       v-if="isOpenDL" 
       :title="'DesignLab'" 
@@ -121,19 +130,25 @@
 
     <ProjectTwine
       v-if="isOpenTwine" 
-      :title="'Twine'" 
+      :title="'Cinderella: Rewritten'" 
       @openTwine="openProjectTwine"
       @closeTwine="closeProjectTwine"
     />
     <ProjectHT
       v-if="isOpenHT" 
-      :title="'Hypertext'" 
+      :title="'PRIMARY'" 
       @openHT="openProjectHT"
       @closeHT="closeProjectHT"
     />
+    <ProjectHT2
+      v-if="isOpenHT2" 
+      :title="'By The End, There is Everything'" 
+      @openHT2="openProjectHT2"
+      @closeHT2="closeProjectHT2"
+    />
     <ProjectDS
       v-if="isOpenDS" 
-      :title="'Digital Storytelling'" 
+      :title="'Digital Storytelling: A Collection'" 
       @openDS="openProjectDS"
       @closeDS="closeProjectDS"
     />
@@ -146,9 +161,15 @@
     />
     <ProjectChickboy
       v-if="isOpenChickboy" 
-      :title="'Chickboy'" 
+      :title="'Chick-boy'" 
       @openChickboy="openProjectChickboy"
       @closeChickboy="closeProjectChickboy"
+    />
+    <ProjectCanvas
+      v-if="isOpenCanvas" 
+      :title="'Marceline’s Escape'" 
+      @openCanvas="openProjectCanvas"
+      @closeCanvas="closeProjectCanvas"
     />
   </body>
 </template>
@@ -180,10 +201,12 @@
 
   import ProjectTwine from '@/components/ProjectTwine.vue';
   import ProjectHT from '@/components/ProjectHT.vue';
+  import ProjectHT2 from '@/components/ProjectHT2.vue';
   import ProjectDS from '@/components/ProjectDS.vue';
 
   import ProjectRPS from '@/components/ProjectRPS.vue';
   import ProjectChickboy from '@/components/ProjectChickboy.vue';
+  import ProjectCanvas from '@/components/ProjectCanvas.vue';
 
   // --------------- DOCKS ---------------
   let darkdock: HTMLElement | null = null;
@@ -247,9 +270,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -283,9 +308,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -319,9 +346,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -355,9 +384,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -393,9 +424,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -429,9 +462,11 @@
           isOpenSewcial.value = false;
           isOpenTwine.value = false;
           isOpenHT.value = false;
+          isOpenHT2.value = false;
           isOpenDS.value = false;
           isOpenRPS.value = false;
           isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -465,9 +500,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -501,9 +538,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -537,9 +576,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -573,9 +614,11 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -609,9 +652,11 @@
 					isOpenPIHSS.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -645,9 +690,11 @@
 					isOpenPIHSS.value = false;
 					isOpenSewcial.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -681,15 +728,55 @@
 					isOpenPIHSS.value = false;
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
   }
   function closeProjectHT() {
     isOpenHT.value = false;
+  }
+
+  // hypertext 2
+  const isOpenHT2 = ref(false);
+  function openProjectHT2() {
+    switch (isOpenHT2.value) {
+      case true: 
+        isOpenHT2.value = false;
+        break;
+      case false:
+        isOpenHT2.value = true;
+        
+        // run this code on mobile-tablet
+        if (window.innerWidth <= 768) {
+          isOpenAbout.value = false;
+          isOpenGraphics.value = false;
+          isOpenUXUI.value = false;
+          isOpenWorks.value = false;
+
+					isOpenChunk.value = false;
+					isOpenCrab.value = false;
+					isOpenCiao.value = false;
+					isOpenFunkey.value = false;
+					isOpenDL.value = false;
+					isOpenPIHSS.value = false;
+					isOpenSewcial.value = false;
+					isOpenTwine.value = false;
+          isOpenHT.value = false;
+					isOpenDS.value = false;
+					isOpenRPS.value = false;
+					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
+        }
+        break;
+    }
+  }
+  function closeProjectHT2() {
+    isOpenHT2.value = false;
   }
 
   // digital storytelling
@@ -718,8 +805,10 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenRPS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -754,8 +843,10 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
@@ -790,15 +881,55 @@
 					isOpenSewcial.value = false;
 					isOpenTwine.value = false;
 					isOpenHT.value = false;
+          isOpenHT2.value = false;
 					isOpenDS.value = false;
 					isOpenRPS.value = false;
-					isOpenChickboy.value = false;
+          isOpenCanvas.value = false;
         }
         break;
     }
   }
   function closeProjectChickboy() {
     isOpenChickboy.value = false;
+  }
+
+  // canvas
+  const isOpenCanvas = ref(false);
+  function openProjectCanvas() {
+    switch (isOpenCanvas.value) {
+      case true: 
+        isOpenCanvas.value = false;
+        break;
+      case false:
+        isOpenCanvas.value = true;
+        
+        
+        // run this code on mobile-tablet
+        if (window.innerWidth <= 768) {
+          isOpenAbout.value = false;
+          isOpenGraphics.value = false;
+          isOpenUXUI.value = false;
+          isOpenWorks.value = false;
+
+					isOpenChunk.value = false;
+					isOpenCrab.value = false;
+					isOpenCiao.value = false;
+					isOpenFunkey.value = false;
+					isOpenDL.value = false;
+					isOpenPIHSS.value = false;
+					isOpenSewcial.value = false;
+					isOpenTwine.value = false;
+					isOpenHT.value = false;
+          isOpenHT2.value = false;
+					isOpenDS.value = false;
+					isOpenRPS.value = false;
+          isOpenChickboy.value = false;
+        }
+        break;
+    }
+  }
+  function closeProjectCanvas() {
+    isOpenCanvas.value = false;
   }
 
 </script>

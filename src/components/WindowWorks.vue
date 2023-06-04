@@ -28,6 +28,10 @@
           :image="'img/_DST/HTS/CoverImage.png'" 
           :title="'PRIMARY'">
         </Card>
+        <Card @click="$emit('openHT2')"
+          :image="'img/_DST/HTS2/CoverImage.png'" 
+          :title="'There is Everything'">
+        </Card>
         <Card @click="$emit('openDS')"
           :image="'img/_DST/DS/CoverImage.png'" 
           :title="'A Collection'">
@@ -48,7 +52,7 @@
           :image="'img/_CODE/Chickboy/CoverImage.png'" 
           :title="'Chick-boy'">
         </Card>
-        <Card @click="$emit('openSewcial')"
+        <Card @click="$emit('openCanvas')"
           :image="'img/_CODE/Canvas/CoverImage.png'" 
           :title="'Marceline’s Escape'">
         </Card>

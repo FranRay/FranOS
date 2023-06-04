@@ -9,7 +9,7 @@
     <!-- Window Content -->
     <div class="content">
       <div class="intro">
-        <h1>Sample Project</h1>
+        <h1>Pakistan Islamia HSS</h1>
         <div class="desc">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>

@@ -9,18 +9,30 @@
     <!-- Window Content -->
     <div class="content">
       <div class="intro">
-        <h1>Sample Project</h1>
+        <h1>Ciao! Pasta</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Text, but it's about the project.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>More Text.</p>
         <br>
-        <img src="../images/Project-Placeholder.png">
+        <img src="img/_GD/CiaoPasta/ContentHeader.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>More Text.</p>
+      </div>
+      <div class = "flex-grid">
+        <img src="img/_GD/CiaoPasta/ContentPieceThird.png">
+        <img src="img/_GD/CiaoPasta/ContentPieceThird-1.png">
+        <img src="img/_GD/CiaoPasta/ContentPieceThird-2.png">
+      </div>
+      <div class="case">
+        <p>More Text.</p>
+        <br>
+        <img src="img/_GD/CiaoPasta/ContentPiece.png">
+        <br>
+        <img src="img/_GD/CiaoPasta/ContentPiece-1.png">
       </div>
 
     </div>
@@ -151,6 +163,18 @@
         width: 90%;
       }
     }
+  }
+
+  //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 32%;
+    }
+
   }
 
   .hide {

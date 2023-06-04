@@ -1,5 +1,5 @@
 <template>
-  <div ref="head" :style="style" class="window">
+  <div ref="head" :style="style" class="window" id="uxui">
     <!-- Title Bar -->
     <div class="title-bar hide">
       <h3>{{ title }}</h3>
