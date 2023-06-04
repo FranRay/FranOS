@@ -16,21 +16,47 @@
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- Carousel -->
+        <Carousel>
+          <Slide v-for="slide in slides" :key="slide.id">
+            <div class="carousel__item">
+              <img :src="`${slide.src}`" />
+            </div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
         <br>
-        <img src="../images/Project-Placeholder.png">
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Text.</p>
       </div>
 
+      <div class = "flex-grid">
+        <img src="/img/_DST/HTS/Primo.png">
+        <img src="/img/_DST/HTS/Maddox.png">
+        <img src="/img/_DST/HTS/Riley.png">
+      </div>
+      <br>
+      <div class = "flex-grid">
+        <img src="/img/_DST/HTS/Phone.png">
+        <img src="/img/_DST/HTS/Explosion.png">
+        <img src="/img/_DST/HTS/New.png">
+      </div>
+      <div class="case">
+        <p>Text.</p>
+      </div>
     </div>
-
   </div>
 </template>
   
 <script setup lang = "ts">
-  import { ref } from 'vue';
+  import { ref, defineComponent } from 'vue';
   import { useDraggable } from '@vueuse/core';
+  import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+
+  import 'vue3-carousel/dist/carousel.css'
 
   // Heading Prop
   const props = defineProps({
@@ -44,6 +70,22 @@
   const head = ref<HTMLElement | null>(null)
   const { x, y, style } = useDraggable(head, {
     initialValue: { x: 60, y: 60 },
+  })
+
+  // Carousel
+  const slides = [
+    { id: 1, src: 'img/_DST/HTS/HTSScreenshot2.png'},
+    { id: 2, src: 'img/_DST/HTS/HTSScreenshot1.png'},
+  ]
+
+  defineComponent({
+    name: 'Basic',
+    components: {
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation,
+    },
   })
 </script>
   
@@ -151,6 +193,44 @@
         width: 90%;
       }
     }
+  }
+
+  //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 32%;
+    }
+  }
+
+  // carousel
+  .carousel__item {
+  // min-height: 200px;
+  width: 100%;
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+  font-size: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .carousel__slide {
+    padding: 5px;
+  }
+
+  .carousel__prev,
+  .carousel__next {
+    box-sizing: content-box;
+    color: red;
+  }
+
+  .carousel__pagination {
+    margin-left: -2.5em;
   }
 
   .hide {

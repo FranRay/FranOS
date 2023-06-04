@@ -11,18 +11,28 @@
       <div class="intro">
         <h1>Cinderella: Rewritten</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>This piece presents Cinderella, a childhood favourite, and a classic fairytale - but with a twist. Or rather, many twists.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img src="/img/_DST/Twine/Sky.png">
         <br>
-        <img src="../images/Project-Placeholder.png">
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>One was to tell the story of Cinderella in ways more than one: a mix of mellow, surprising, and harsh endings, as well as the original ending. I  wanted the users to still experience the fairytale, but with a broader perspective, and different endings depending on their decisions. The second goal was to ensure that the audience felt their involvement in the story, and I intended for that to be accomplished through the multiple choices and endings.</p>
       </div>
 
+      <div class = "flex-grid">
+        <img src="/img/_DST/Twine/CindyBall.png">
+        <img src="/img/_DST/Twine/Insanity.png">
+      </div>
+      <br>
+      <div class = "flex-grid">
+        <img src="/img/_DST/Twine/AtticWindowDark.png">
+        <img src="/img/_DST/Twine/Werewolf.png">
+      </div>
+      <div class="case">
+      <p>Apart from achieving these goals, there was something else in this story's creation that I found difficult yet enjoyable, and that was the production of the hand drawn images throughout the twine. The process was very long, yet ultimately rewarding, and I am proud of its outcome.</p>
+      </div>
     </div>
 
   </div>
@@ -150,6 +160,17 @@
       img {
         width: 90%;
       }
+    }
+  }
+
+  //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
     }
   }
 

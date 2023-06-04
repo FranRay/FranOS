@@ -11,20 +11,30 @@
         <div class="intro">
           <h1>By The End, There is Everything</h1>
           <div class="desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Text.</p>
           </div>
         </div>
   
         <div class="case">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <img src="/img/_DST/HTS2/ContentPiece3.png">
           <br>
-          <img src="../images/Project-Placeholder.png">
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Text.</p>
         </div>
-  
+
+        <div class = "flex-grid">
+          <img src="/img/_DST/HTS2/ContentPiece2.png">
+          <img src="/img/_DST/HTS2/ContentPiece6.png">
+        </div>
+        <br>
+        <div class = "flex-grid">
+          <img src="/img/_DST/HTS2/ContentPiece4.png">
+          <img src="/img/_DST/HTS2/ContentPiece5.png">
+        </div>
+        <div class="case">
+          <img src="/img/_DST/HTS2/ContentPiece1.png">
+          <p>Text.</p>
+        </div>
       </div>
-  
     </div>
   </template>
     
@@ -152,6 +162,17 @@
         }
       }
     }
+
+    //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
+    }
+  }
   
     .hide {
       display: none;

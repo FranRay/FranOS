@@ -16,11 +16,42 @@
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>More Text.</p>
+        <img src="/img/_UXUI/Funkey/StyleGuide.png">
         <br>
-        <img src="../images/Project-Placeholder.png">
+        <p>More Text.</p>
+        <img src="/img/_UXUI/Funkey/Persona.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- Carousel -->
+        <Carousel>
+          <Slide v-for="slide in slides" :key="slide.id">
+            <div class="carousel__item">
+              <img :src="`${slide.src}`" />
+            </div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
+        <br>
+        <p>More Text.</p>
+        <br>
+        <img src="/img/_UXUI/Funkey/Storyboard.png">
+
+        <Carousel>
+          <Slide v-for="slide in slides2" :key="slide.id">
+            <div class="carousel__item">
+              <img :src="`${slide.src}`" />
+            </div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
       </div>
 
     </div>
@@ -29,8 +60,9 @@
 </template>
   
 <script setup lang = "ts">
-  import { ref } from 'vue';
+  import { ref, defineComponent } from 'vue';
   import { useDraggable } from '@vueuse/core';
+  import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 
   // Heading Prop
   const props = defineProps({
@@ -44,6 +76,29 @@
   const head = ref<HTMLElement | null>(null)
   const { x, y, style } = useDraggable(head, {
     initialValue: { x: 60, y: 60 },
+  })
+
+  // Carousel
+  const slides = [
+    { id: 1, src: 'img/_UXUI/Funkey/Wireframe.png'},
+    { id: 2, src: 'img/_UXUI/Funkey/Wireframe2.png'},
+  ]
+
+  const slides2 = [
+    { id: 1, src: 'img/_UXUI/Funkey/Prototype.png'},
+    { id: 2, src: 'img/_UXUI/Funkey/Prototype1.png'},
+    { id: 3, src: 'img/_UXUI/Funkey/Prototype2.png'},
+    { id: 4, src: 'img/_UXUI/Funkey/Prototype3.png'},
+  ]
+
+  defineComponent({
+    name: 'Basic',
+    components: {
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation,
+    },
   })
 </script>
   
@@ -150,6 +205,53 @@
       img {
         width: 90%;
       }
+    }
+  }
+
+  // carousel
+  .carousel__item {
+  // min-height: 200px;
+  width: 100%;
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+  font-size: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .carousel__slide {
+    padding: 5px;
+  }
+
+  .carousel__prev,
+  .carousel__next {
+    box-sizing: content-box;
+    color: red;
+  }
+
+  .carousel__pagination {
+    margin-left: -2.5em;
+  }
+
+  //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
+    }
+
+  }
+
+  .hide {
+    display: none;
+
+    @include media(laptop) {
+      display: flex;
     }
   }
 

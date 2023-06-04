@@ -11,16 +11,45 @@
       <div class="intro">
         <h1>A Storytelling Collection</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>A collection of small-scale storytelling works, mostly academic.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Bitsy: Animam Agere</h2>
+        <p>Animam Agere is an interactive story and short adventure-style narrative that revolves around death, fear, and friendship.</p>
+      </div>
+
+      <div class="flex-grid">
+        <img src="/img/_DST/DS/SS-2.png">
+        <img src="/img/_DST/DS/SS-3.png">
+      </div>
+      <br>
+      <div class="flex-grid">
+        <img src="/img/_DST/DS/SS-4.png">
+        <img src="/img/_DST/DS/SS-5.png">
+      </div>
+
+      <div class="case">
+        <h2>Storyboard: Amazon</h2>
+        <p>The tale of the red thread of fate was a very big influence to this project. Every time I heard of it, or was reminded of its story, it would strike a chord. Inspired by the story, I decided to turn it into an Amazon ad storyboard.</p>
         <br>
-        <img src="../images/Project-Placeholder.png">
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tVp7r7T0BRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+
+        <h2>Stopmotion</h2>
+        <p>Inspired by the song Melancholy Astronautic Man, by Allie Moss, I decided to create a stop-motion short about lovers in space.</p>
+        <br>
+        <div class="video2">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aIQjeaXoOkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+        <p>A simple, light-hearted short that's hopelessly romantic, and full of yearning. The medium of choice, paper, and its imperfections were there to represent the youthfulness, the callousness, and the raw emotions brought about by puppy love.</p>
+        <br>
+        
       </div>
 
     </div>
@@ -151,6 +180,29 @@
         width: 90%;
       }
     }
+
+    .video {
+      // padding-top: 56.25%;
+      width: 90%;
+      aspect-ratio: 16/9;
+    }
+    .video2 {
+      // padding-top: 56.25%;
+      width: 90%;
+      aspect-ratio: 15/10;
+    }
+  }
+
+  //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
+    }
+
   }
 
   .hide {
