@@ -16,11 +16,28 @@
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img src="/img/_CODE/RPS/CoverImage.png">
         <br>
-        <img src="../images/Project-Placeholder.png">
+        <p>Text.</p>
+      </div>
+
+      <div class = "flex-grid">
+        <img src="/img/_CODE/RPS/Content.png">
+        <img src="/img/_CODE/RPS/Content-3.png">
+      </div>
+      <br>
+      <div class = "flex-grid">
+        <img src="/img/_CODE/RPS/Content-2.png">
+        <img src="/img/_CODE/RPS/Content-1.png">
+      </div>
+      <div class="case">
+        <p>Text here.</p>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fs_YU5ppGAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+        <p>Text again.</p>
       </div>
 
     </div>
@@ -150,6 +167,23 @@
       img {
         width: 90%;
       }
+    }
+
+    .video {
+      // padding-top: 56.25%;
+      width: 90%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
     }
   }
 

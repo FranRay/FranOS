@@ -16,11 +16,39 @@
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img src="/img/_CODE/Chickboy/CoverImage.png">
         <br>
-        <img src="../images/Project-Placeholder.png">
+        <p>One was to tell the story of Cinderella in ways more than one: a mix of mellow, surprising, and harsh endings, as well as the original ending. I  wanted the users to still experience the fairytale, but with a broader perspective, and different endings depending on their decisions. The second goal was to ensure that the audience felt their involvement in the story, and I intended for that to be accomplished through the multiple choices and endings.</p>
+      </div>
+
+      <div class = "flex-grid">
+        <img src="/img/_CODE/Chickboy/Prototyping.png">
+        <img src="/img/_CODE/Chickboy/Prototyping-1.png">
+      </div>
+      <br>
+      <div class = "flex-grid">
+        <img src="/img/_CODE/Chickboy/Prototyping-2.png">
+        <img src="/img/_CODE/Chickboy/Prototyping-3.png">
+      </div>
+      <div class="case">
+        <p>Apart from achieving these goals, there was something else in this story's creation that I found difficult yet enjoyable, and that was the production of the hand drawn images throughout the twine. The process was very long, yet ultimately rewarding, and I am proud of its outcome.</p>
+      </div>
+      <div class = "flex-grid">
+        <img src="/img/_CODE/Chickboy/Prototyping-1.png">
+        <img src="/img/_CODE/Chickboy/LevelPrototype.png">
+      </div>
+      <div class="case">
+        <img src="/img/_CODE/Chickboy/FinalLevel.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Text here.</p>
+        <br>
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QDeQm2yVfmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+        <p>Text again.</p>
+        <br>
+        <img src="/img/_CODE/Chickboy/Feedback.png">
       </div>
 
     </div>
@@ -149,6 +177,23 @@
       img {
         width: 90%;
       }
+    }
+
+    .video {
+      // padding-top: 56.25%;
+      width: 90%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  //flex grids 
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
     }
   }
 

@@ -16,11 +16,30 @@
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img src="/img/_UXUI/DL/CoverImage.png">
         <br>
-        <img src="../images/Project-Placeholder.png">
+        <p>Text.</p>
+        <img src="/img/_UXUI/DL/Wireframes.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class = "flex-grid">
+        <img src="/img/_UXUI/DL/ContentPiece.png">
+        <img src="/img/_UXUI/DL/ContentPiece-4.png">
+      </div>
+      <br>
+      <div class = "flex-grid">
+        <img src="/img/_UXUI/DL/ContentPiece-1.png">
+        <img src="/img/_UXUI/DL/ContentPiece-2.png">
+      </div>
+      <div class="case">
+        <p>Text here.</p>
+        <br>
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxB3R5v1RQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+        <p>Text again.</p>
       </div>
 
     </div>
@@ -150,6 +169,22 @@
       img {
         width: 90%;
       }
+    }
+
+    .video {
+      // padding-top: 56.25%;
+      width: 90%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  .flex-grid {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: space-between;
+    img {
+      width: 48%;
     }
   }
 
