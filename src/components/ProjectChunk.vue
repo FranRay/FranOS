@@ -17,7 +17,7 @@
 
       <div class="case">
         <p>More Text.</p>
-        <img src="img/_GD/Chunk/ContentHeader.png">
+        <img src="/img/_GD/Chunk/ContentHeader.png">
         <br>
         <p>More Text.</p>
         <br>
@@ -38,11 +38,11 @@
         <p>More Text.</p>
       </div>
       <div class = "flex-grid">
-        <img src="img/_GD/Chunk/ContentPieceHalf.png">
-        <img src="img/_GD/Chunk/ContentPieceHalf-1.png">
+        <img src="/img/_GD/Chunk/ContentPieceHalf.png">
+        <img src="/img/_GD/Chunk/ContentPieceHalf-1.png">
       </div>
       <div class="case">
-        <img src="img/_GD/Chunk/Stalls.png">
+        <img src="/img/_GD/Chunk/Stalls.png">
       </div>
 
     </div>
