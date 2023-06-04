@@ -19,7 +19,7 @@
         <p>More Text.</p>
         <img src="/img/_GD/Chunk/ContentHeader.png">
         <br>
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <!-- Carousel -->
         <Carousel>
@@ -35,7 +35,7 @@
           </template>
         </Carousel>
         <br>
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class = "flex-grid">
         <img src="/img/_GD/Chunk/ContentPieceHalf.png">

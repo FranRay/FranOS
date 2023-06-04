@@ -11,14 +11,14 @@
         <div class="intro">
           <h1>By The End, There is Everything</h1>
           <div class="desc">
-            <p>Text.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div>
   
         <div class="case">
           <img src="/img/_DST/HTS2/ContentPiece3.png">
           <br>
-          <p>Text.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
         <div class = "flex-grid">
@@ -32,7 +32,7 @@
         </div>
         <div class="case">
           <img src="/img/_DST/HTS2/ContentPiece1.png">
-          <p>Text.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@
       <div class="case">
         <img src="/img/_UXUI/DL/CoverImage.png">
         <br>
-        <p>Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img src="/img/_UXUI/DL/Wireframes.png">
         <br>
       </div>
@@ -33,13 +33,13 @@
         <img src="/img/_UXUI/DL/ContentPiece-2.png">
       </div>
       <div class="case">
-        <p>Text here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <div class="video">
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxB3R5v1RQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <br>
-        <p>Text again.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
     </div>

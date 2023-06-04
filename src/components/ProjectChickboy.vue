@@ -18,7 +18,7 @@
       <div class="case">
         <img src="/img/_CODE/Chickboy/CoverImage.png">
         <br>
-        <p>One was to tell the story of Cinderella in ways more than one: a mix of mellow, surprising, and harsh endings, as well as the original ending. I  wanted the users to still experience the fairytale, but with a broader perspective, and different endings depending on their decisions. The second goal was to ensure that the audience felt their involvement in the story, and I intended for that to be accomplished through the multiple choices and endings.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
       <div class = "flex-grid">
@@ -31,7 +31,7 @@
         <img src="/img/_CODE/Chickboy/Prototyping-3.png">
       </div>
       <div class="case">
-        <p>Apart from achieving these goals, there was something else in this story's creation that I found difficult yet enjoyable, and that was the production of the hand drawn images throughout the twine. The process was very long, yet ultimately rewarding, and I am proud of its outcome.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class = "flex-grid">
         <img src="/img/_CODE/Chickboy/Prototyping-1.png">
@@ -40,13 +40,13 @@
       <div class="case">
         <img src="/img/_CODE/Chickboy/FinalLevel.png">
         <br>
-        <p>Text here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <div class="video">
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QDeQm2yVfmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <br>
-        <p>Text again.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <img src="/img/_CODE/Chickboy/Feedback.png">
       </div>

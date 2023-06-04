@@ -16,10 +16,10 @@
       </div>
 
       <div class="case">
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img src="/img/_UXUI/Funkey/StyleGuide.png">
         <br>
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img src="/img/_UXUI/Funkey/Persona.png">
         <br>
         <!-- Carousel -->
@@ -36,7 +36,7 @@
           </template>
         </Carousel>
         <br>
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <img src="/img/_UXUI/Funkey/Storyboard.png">
 

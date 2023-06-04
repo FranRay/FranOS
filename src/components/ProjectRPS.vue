@@ -18,7 +18,7 @@
       <div class="case">
         <img src="/img/_CODE/RPS/CoverImage.png">
         <br>
-        <p>Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
       <div class = "flex-grid">
@@ -31,13 +31,13 @@
         <img src="/img/_CODE/RPS/Content-1.png">
       </div>
       <div class="case">
-        <p>Text here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <div class="video">
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fs_YU5ppGAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <br>
-        <p>Text again.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
     </div>

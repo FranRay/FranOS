@@ -18,7 +18,7 @@
         <div class="case">
           <img src="/img/_CODE/Canvas/CoverImage.png">
           <br>
-          <p>One was to tell the story of Cinderella in ways more than one: a mix of mellow, surprising, and harsh endings, as well as the original ending. I  wanted the users to still experience the fairytale, but with a broader perspective, and different endings depending on their decisions. The second goal was to ensure that the audience felt their involvement in the story, and I intended for that to be accomplished through the multiple choices and endings.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
         <div class = "flex-grid">
@@ -31,7 +31,7 @@
           <img src="/img/_CODE/Canvas/Content2.png">
         </div>
         <div class="case">
-          <p>Apart from achieving these goals, there was something else in this story's creation that I found difficult yet enjoyable, and that was the production of the hand drawn images throughout the twine. The process was very long, yet ultimately rewarding, and I am proud of its outcome.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
   
       </div>

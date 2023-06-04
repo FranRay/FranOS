@@ -11,16 +11,16 @@
       <div class="intro">
         <h1>Ciao! Pasta</h1>
         <div class="desc">
-          <p>Text, but it's about the project.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <img src="/img/_GD/CiaoPasta/ContentHeader.png">
         <br>
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class = "flex-grid">
         <img src="/img/_GD/CiaoPasta/ContentPieceThird.png">
@@ -28,7 +28,7 @@
         <img src="/img/_GD/CiaoPasta/ContentPieceThird-2.png">
       </div>
       <div class="case">
-        <p>More Text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <br>
         <img src="/img/_GD/CiaoPasta/ContentPiece.png">
         <br>
