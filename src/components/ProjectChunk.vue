@@ -11,16 +11,17 @@
       <div class="intro">
         <h1>Chunk Bakehouse</h1>
         <div class="desc">
-          <p>Text.</p>
+          <p>As a Lead Visual Designer at Chunk Bakehouse, I had the opportunity to create a range of compelling visual content that effectively reached tthe brand's audience on social media and web platforms.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>More Text.</p>
+        <p>I leveraged my skills in brand design to produce visually striking branding, packaging, and digital assets that played a key role in the team's digital marketing success.</p>
+        <br>
         <img src="/img/_GD/Chunk/ContentHeader.png">
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <br>
+        <!-- <br> -->
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        <!-- <br> -->
         <!-- Carousel -->
         <Carousel>
           <Slide v-for="slide in slides" :key="slide.id">
@@ -34,8 +35,8 @@
             <Pagination />
           </template>
         </Carousel>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- <br> -->
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
       </div>
       <div class = "flex-grid">
         <img src="/img/_GD/Chunk/ContentPieceHalf.png">
@@ -43,6 +44,8 @@
       </div>
       <div class="case">
         <img src="/img/_GD/Chunk/Stalls.png">
+        <br>
+        <p>My ability to create captivating content that resonated with the brand's target audience helped to solidify its position in the food industry.</p>
       </div>
 
     </div>

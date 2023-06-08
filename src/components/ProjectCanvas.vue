@@ -11,14 +11,14 @@
         <div class="intro">
           <h1>Marceline's Escape</h1>
           <div class="desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>An HTML Canvas experience based on the character "Marceline" from the show Adventure Time.</p>
           </div>
         </div>
   
         <div class="case">
           <img src="/img/_CODE/Canvas/CoverImage.png">
           <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Featuring audio, images, and triggerable events - all built with HTML Canvas. Users can interact using key presses: Enter, SPACE, and R keys.</p>
         </div>
 
         <div class = "flex-grid">
@@ -31,7 +31,7 @@
           <img src="/img/_CODE/Canvas/Content2.png">
         </div>
         <div class="case">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>The mechanics are similar to "Flappy Bird", wherein users must press SPACE to avoid several obstacles.</p>
         </div>
   
       </div>

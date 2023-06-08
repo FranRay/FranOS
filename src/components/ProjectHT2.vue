@@ -11,14 +11,14 @@
         <div class="intro">
           <h1>By The End, There is Everything</h1>
           <div class="desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>A set of illustrations created for a hypertext story.</p>
           </div>
         </div>
   
         <div class="case">
           <img src="/img/_DST/HTS2/ContentPiece3.png">
           <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Created for Nella Rose's "by the end, THERE IS EVERYTHING".</p>
         </div>
 
         <div class = "flex-grid">
@@ -32,7 +32,6 @@
         </div>
         <div class="case">
           <img src="/img/_DST/HTS2/ContentPiece1.png">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>

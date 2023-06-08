@@ -11,16 +11,16 @@
       <div class="intro">
         <h1>DesignLab</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>A design toolkit that provides designers with basic resources to create visuals for their projects.</p>
         </div>
       </div>
 
       <div class="case">
         <img src="/img/_UXUI/DL/CoverImage.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="/img/_UXUI/DL/Wireframes.png">
+        <p>Wireframes and prototypes leading up to the final project, which was made using HTML5 and several APIs.</p>
         <br>
+        <img src="/img/_UXUI/DL/Wireframes.png">
       </div>
 
       <div class = "flex-grid">
@@ -33,13 +33,13 @@
         <img src="/img/_UXUI/DL/ContentPiece-2.png">
       </div>
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>DEMO:</p>
         <br>
         <div class="video">
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxB3R5v1RQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="https://github.com/FranRay/DesignLab"><p>Github Repository</p></a>
       </div>
 
     </div>

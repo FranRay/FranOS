@@ -11,16 +11,14 @@
       <div class="intro">
         <h1>Ciao! Pasta</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Along with the marketing team, I directed the creation of visually captivating content for various channels, such as social media and advertising assets.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>By utilizing my expertise in creating visually appealing content that resonates with food lovers, I developed creative concepts that aligned with the brand's messaging and identity.</p>
         <br>
         <img src="/img/_GD/CiaoPasta/ContentHeader.png">
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class = "flex-grid">
         <img src="/img/_GD/CiaoPasta/ContentPieceThird.png">
@@ -28,11 +26,13 @@
         <img src="/img/_GD/CiaoPasta/ContentPieceThird-2.png">
       </div>
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>With a warm and welcoming image, I created assets for the food brand, crafting content for social media and mailing campaigns.</p>
         <br>
         <img src="/img/_GD/CiaoPasta/ContentPiece.png">
         <br>
         <img src="/img/_GD/CiaoPasta/ContentPiece-1.png">
+        <br>
+        <p>Through my contributions, I helped to establish Ciao! Pasta as a loved food delivery brand by those who need a quick, delicious bite.</p>
       </div>
 
     </div>

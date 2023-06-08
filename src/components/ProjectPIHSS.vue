@@ -11,16 +11,51 @@
       <div class="intro">
         <h1>Pakistan Islamia HSS</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>A web redesign and development project for Pakistan Islamia Higher Secondary School, created on Figma and HTML5.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="/img/_UXUI/PIHSS/CoverImage.png">
         <br>
-        <img src="../images/Project-Placeholder.png">
+        <p>The team used the agility development method and established time windows for the phases of the project.</p>
+        <!-- Carousel -->
+        <Carousel>
+          <Slide v-for="slide in slides" :key="slide.id">
+            <div class="carousel__item">
+              <img :src="`${slide.src}`" />
+            </div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>There were several issues that our team identified with the school's former website, namely with their design and content. Thus, we created a new visual style and sitemap.</p>
+        <br>
+        <img src="/img/_UXUI/PIHSS/ContentPiece-6.png">
+        <!-- Carousel -->
+        <Carousel>
+          <Slide v-for="slide in slides2" :key="slide.id">
+            <div class="carousel__item">
+              <img :src="`${slide.src}`" />
+            </div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
+        <br>
+        <p>After further research, we created wireframes and several prototypes based on previous iterations and feedback.</p>
+        <br>
+        <img src="/img/_UXUI/PIHSS/ContentPiece-2.png">
+        <br>
+        <img src="/img/_UXUI/PIHSS/ContentPiece-5.png">
+
       </div>
 
     </div>
@@ -29,8 +64,11 @@
 </template>
   
 <script setup lang = "ts">
-  import { ref } from 'vue';
+  import { ref, defineComponent } from 'vue';
   import { useDraggable } from '@vueuse/core';
+  import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+
+  import 'vue3-carousel/dist/carousel.css'
 
   // Heading Prop
   const props = defineProps({
@@ -44,6 +82,28 @@
   const head = ref<HTMLElement | null>(null)
   const { x, y, style } = useDraggable(head, {
     initialValue: { x: 60, y: 60 },
+  })
+
+  // Carousel
+  const slides = [
+    { id: 1, src: 'img/_UXUI/PIHSS/ContentPiece.png'},
+    { id: 2, src: 'img/_UXUI/PIHSS/ContentPiece-1.png'},
+  ]
+
+  // Carousel
+  const slides2 = [
+    { id: 1, src: 'img/_UXUI/PIHSS/ContentPiece-4.png'},
+    { id: 2, src: 'img/_UXUI/PIHSS/ContentPiece-3.png'},
+  ]
+
+  defineComponent({
+    name: 'Basic',
+    components: {
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation,
+    },
   })
 </script>
   
@@ -151,6 +211,33 @@
         width: 90%;
       }
     }
+  }
+
+  // carousel
+  .carousel__item {
+  // min-height: 200px;
+  width: 100%;
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+  font-size: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .carousel__slide {
+    padding: 5px;
+  }
+
+  .carousel__prev,
+  .carousel__next {
+    box-sizing: content-box;
+    color: red;
+  }
+
+  .carousel__pagination {
+    margin-left: -2.5em;
   }
 
   .hide {

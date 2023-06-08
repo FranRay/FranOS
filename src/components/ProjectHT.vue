@@ -11,7 +11,7 @@
       <div class="intro">
         <h1>PRIMARY</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Illustrations for a hypertext story about three childhood friends - Primo, Maddox, and Rylie.</p>
         </div>
       </div>
 
@@ -30,7 +30,7 @@
           </template>
         </Carousel>
         <br>
-        <p>Text.</p>
+        <p>Several rough illustrations in primary colors.</p>
       </div>
 
       <div class = "flex-grid">
@@ -45,7 +45,6 @@
         <img src="/img/_DST/HTS/New.png">
       </div>
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
   </div>

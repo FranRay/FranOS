@@ -11,18 +11,16 @@
       <div class="intro">
         <h1>Sewcial</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>A web design and graphic design project for Sewcial:  a concept that combines sewing and community, a gathering space where people can connect, create, and foster a sense of belonging.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <br>
         <img src="/img/_UXUI/Sewcial/SDLC.png">
         <br>
         <img src="/img/_UXUI/Sewcial/ProjectRoadmap.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>The project followed the agility SDLC method, and was backed by audience research.</p>
         <!-- Carousel -->
         <Carousel>
           <Slide v-for="slide in slides" :key="slide.id">
@@ -37,7 +35,7 @@
           </template>
         </Carousel>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Several steps were taken to ensure the design process was smooth, especially establishing guidelines, and creating maps and wireframes.</p>
         <!-- Carousel -->
         <Carousel>
           <Slide v-for="slide in slides2" :key="slide.id">
@@ -52,13 +50,12 @@
           </template>
         </Carousel>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <br>
         <img src="/img/_UXUI/Sewcial/Sitemap.png">
         <br>
         <img src="/img/_UXUI/Sewcial/Wireframes.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Some examples of the final prototype:</p>
+        
         <!-- Carousel -->
         <Carousel>
           <Slide v-for="slide in slides3" :key="slide.id">
@@ -73,7 +70,9 @@
           </template>
         </Carousel>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>The prototypes in action: <a href="https://sewcial.space">sewcial.space</a></p>
+        <br>
+        <p>The project also involved designing and creating a 3D Model, as well as several marketing materials.</p>
         <br>
         <img src="/img/_UXUI/Sewcial/3D.png">
         <br>

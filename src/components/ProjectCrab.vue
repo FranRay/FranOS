@@ -11,18 +11,16 @@
       <div class="intro">
         <h1>Mr. Crab</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>I had the privilege of leading the design team for Mr. Crab, a restaurant based in Dubai, where I created branding and assets that aligned with their message and values.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>My focus was on producing print, packaging, and digital content that was versatile enough to be used in digital and print content rotations.</p>
         <br>
         <img src="/img/_GD/MrCrab/ContentHeader.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img src="/img/_GD/MrCrab/ContentPiece.png">
-        <br>
       </div>
       <div class = "flex-half">
         <img src="/img/_GD/MrCrab/ContentPieceHalf.png">
@@ -35,7 +33,9 @@
         <img src="/img/_GD/MrCrab/ContentPieceThird-2.png">
       </div>
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="/img/_GD/MrCrab/CoverImage2.png">
+        <br>
+        <p>Aside from designing their packaging, I also created visually appealing assets for their social media channels that effectively showcased the product and helped establish the brand's reputation in the food industry.</p>
         <br>
         <img src="/img/_GD/MrCrab/Social.png">
       </div>

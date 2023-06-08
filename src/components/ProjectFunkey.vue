@@ -11,16 +11,18 @@
       <div class="intro">
         <h1>Funkey</h1>
         <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>A mobile app design for a social music app called Funkey, where people connect through sharing and discovering music.</p>
         </div>
       </div>
 
       <div class="case">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img src="/img/_UXUI/Funkey/StyleGuide.png">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Several steps were taken to create Funkey, including user research, market research, and wireframing.</p>
+        <br>
         <img src="/img/_UXUI/Funkey/Persona.png">
+        <br>
+        <img src="/img/_UXUI/Funkey/Storyboard.png">
         <br>
         <!-- Carousel -->
         <Carousel>
@@ -36,10 +38,7 @@
           </template>
         </Carousel>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <br>
-        <img src="/img/_UXUI/Funkey/Storyboard.png">
-
+        <p>There were several prototypes of the project, with the one shown below being the last after reflecting on the feedback.</p>
         <Carousel>
           <Slide v-for="slide in slides2" :key="slide.id">
             <div class="carousel__item">
